@@ -1,5 +1,6 @@
 package FrGrp;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.io.IOException;
@@ -18,5 +19,12 @@ public class Assertxx extends Base
 		driver=InitializeDriver();
 		AssertObjects ao = new AssertObjects(driver);
 		AssertJUnit.assertTrue(ao.lookForContact().isDisplayed());
+	}
+	@AfterTest
+	public void endSession() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		driver.close();
+		driver=null;
 	}
 }

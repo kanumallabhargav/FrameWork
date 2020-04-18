@@ -1,0 +1,4 @@
+03:43:00.398 [main] INFO  resources.Base - Driver is initialized
+03:43:00.465 [main] INFO  resources.Base - Username entered
+03:43:00.509 [main] INFO  resources.Base - Password entered
+03:43:00.751 [main] INFO  resources.Base - clicked on the submit button

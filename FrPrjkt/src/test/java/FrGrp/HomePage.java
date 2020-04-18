@@ -1,5 +1,6 @@
 package FrGrp;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
@@ -15,9 +16,13 @@ public class HomePage extends Base
 	{
 		driver = InitializeDriver();
 		HomePageObjects ho = new HomePageObjects(driver);
-		//driver.get("http://www.qaclickacademy.com/");
 		ho.getLogin().click();
+	}
+	@AfterTest
+	public void endSession() throws InterruptedException
+	{
 		Thread.sleep(2000);
-		driver.quit();
+		driver.close();
+		driver=null;
 	}
 }

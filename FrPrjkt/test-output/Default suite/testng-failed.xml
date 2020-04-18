@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="FrGrp.Assertxx">
+      <class name="FrGrp.LoginPage">
         <methods>
-          <include name="Assertion"/>
+          <include name="loginPageAccess"/>
         </methods>
-      </class> <!-- FrGrp.Assertxx -->
+      </class> <!-- FrGrp.LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

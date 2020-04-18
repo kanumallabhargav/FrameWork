@@ -11,12 +11,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base 
 {
-	public WebDriver driver;
+	public static WebDriver driver;
 	Properties prop = new Properties();
 	public WebDriver InitializeDriver() throws IOException
 	{	
 		
-		FileInputStream fis = new FileInputStream("/Users/bhargavkanmalla/FrPrjkt/src/main/java/resources/Data.properties");
+		FileInputStream fis = new FileInputStream("/Users/bhargavkanmalla/git/FrameWork/FrPrjkt/src/main/java/resources/Data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 		String url=prop.getProperty("url");
