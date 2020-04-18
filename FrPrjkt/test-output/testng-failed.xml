@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="FrGrpJava.screenshotOnFailure"/>
+  </listeners>
+  <test name="AssertTest(failed)" parallel="none">
     <classes>
+      <class name="FrGrp.Assertxx">
+        <methods>
+          <include name="Assertion"/>
+          <include name="endSession"/>
+        </methods>
+      </class> <!-- FrGrp.Assertxx -->
+      <class name="FrGrp.HomePage">
+        <methods>
+          <include name="endSession"/>
+        </methods>
+      </class> <!-- FrGrp.HomePage -->
       <class name="FrGrp.LoginPage">
         <methods>
-          <include name="loginPageAccess"/>
+          <include name="endSession"/>
         </methods>
       </class> <!-- FrGrp.LoginPage -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- AssertTest(failed) -->
+  <test name="HomePageTest(failed)" parallel="none">
+    <classes>
+      <class name="FrGrp.HomePage">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="endSession"/>
+        </methods>
+      </class> <!-- FrGrp.HomePage -->
+      <class name="FrGrp.Assertxx">
+        <methods>
+          <include name="endSession"/>
+        </methods>
+      </class> <!-- FrGrp.Assertxx -->
+      <class name="FrGrp.LoginPage">
+        <methods>
+          <include name="endSession"/>
+        </methods>
+      </class> <!-- FrGrp.LoginPage -->
+    </classes>
+  </test> <!-- HomePageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
