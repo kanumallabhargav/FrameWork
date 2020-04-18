@@ -3,6 +3,7 @@
 <suite name="Suite" parallel="none">
   <listeners>
   	<listener class-name="FrGrpJava.screenshotOnFailure"/>
+  	<listener class-name="resources.ExtentReporterNG"/>
   </listeners>
   <test name="LoginTest">
     <classes>
