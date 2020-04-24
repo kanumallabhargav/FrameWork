@@ -31,31 +31,70 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">15.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">12.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">FrGrp.LoginPage</td><td><a href="#m1"><b>endSession</b>  </a></td><td class="numi">1</td><td>1587731618245</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">FrGrp.LoginPage</td><td><a href="#m2"><b>loginPageAccess</b>  </a></td><td class="numi">1</td><td>1587731605193</td><td class="numi">13048</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">FrGrp.LoginPage</td><td><a href="#m1"><b>loginPageAccess</b>  </a></td><td class="numi">1</td><td>1587744423385</td><td class="numi">10327</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">FrGrp.LoginPage:endSession</h2>
+<h2 id="m1">FrGrp.LoginPage:loginPageAccess</h2>
 <div style="padding-left:3em">
-<p>Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Munnas-MacBook-Pro.local&apos;, ip: &apos;fd14:9d09:fb92:c500:58a5:959b:ce67:30c8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: driver.version: RemoteWebDriver</p>
-org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-<br/>at FrGrp.LoginPage.endSession(LoginPage.java:37)
-<br/>23 lines not shown
+<p>Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.</p>
+com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+<br/>at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:444)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+<br/>at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+<br/>at java.sql.DriverManager.getConnection(DriverManager.java:664)
+<br/>at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br/>at FrGrp.LoginPage.loginPageAccess(LoginPage.java:44)
+<br/>25 lines not shown
+<p>Caused by Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59)
+<br/>at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103)
+<br/>at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+<br/>at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+<br/>at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:92)
+<br/>at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:982)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:852)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:444)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+<br/>at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+<br/>at java.sql.DriverManager.getConnection(DriverManager.java:664)
+<br/>at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br/>at FrGrp.LoginPage.loginPageAccess(LoginPage.java:44)
+<br/>25 lines not shown
+<p>Caused by null: nodename nor servname provided, or not known</p>
+java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+<br/>at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+<br/>at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+<br/>at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+<br/>at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+<br/>at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+<br/>at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:150)
+<br/>at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:66)
+<br/>at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:982)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:852)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:444)
+<br/>at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+<br/>at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+<br/>at java.sql.DriverManager.getConnection(DriverManager.java:664)
+<br/>at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br/>at FrGrp.LoginPage.loginPageAccess(LoginPage.java:44)
+<br/>25 lines not shown
 </div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">FrGrp.LoginPage:loginPageAccess</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -2,6 +2,7 @@ package resources;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +26,7 @@ public class Base
 		//System.getProperty("user.dir");
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/Data.properties");
 		prop.load(fis);
-		String browserName=System.getProperty("browser");
+		String browserName=prop.getProperty("browser");
 		String url=prop.getProperty("url");
 		
 		if(browserName.equals("chrome"))
