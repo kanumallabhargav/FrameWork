@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 public class LoginPageObjects 
 {
 	public WebDriver driver;
-	By email = By.cssSelector("input#user_email");
-	By pwd = By.cssSelector("input#user_password");
-	By submit = By.xpath("//input[@type='submit']");
+	private By email = By.cssSelector("input#user_email");
+	private By pwd = By.cssSelector("input#user_password");
+	private By submit = By.xpath("//input[@type='submit']");
 	public LoginPageObjects(WebDriver driver) 
 	{
 		this.driver=driver;

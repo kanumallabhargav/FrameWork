@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class HomePageObjects 
 {
 	public WebDriver driver;
-	By log = By.cssSelector("a[href*='sign_in']");
+	private By log = By.cssSelector("a[href*='sign_in']");
 	
 	public HomePageObjects(WebDriver driver) 
 	{

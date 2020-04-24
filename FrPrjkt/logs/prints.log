@@ -1,4 +1,6 @@
-21:00:28.015 [main] INFO  resources.Base - Driver is initialized
-21:00:28.088 [main] INFO  resources.Base - Username entered
-21:00:28.141 [main] INFO  resources.Base - Password entered
-21:00:28.387 [main] INFO  resources.Base - clicked on the submit button
+17:35:05.408 [main] INFO  resources.Base - Password entered
+17:35:05.653 [main] INFO  resources.Base - clicked on the submit button
+18:03:35.199 [main] INFO  resources.Base - Driver is initialized
+18:03:35.601 [main] INFO  resources.Base - Username entered
+18:03:35.808 [main] INFO  resources.Base - Password entered
+18:03:36.006 [main] INFO  resources.Base - clicked on the submit button

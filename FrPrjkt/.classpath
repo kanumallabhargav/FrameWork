@@ -25,5 +25,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/bhargavkanmalla/Documents/selenium-java-3.141.59/apache-log4j-2.13.1-bin/log4j-api-2.13.1.jar"/>
 	<classpathentry kind="lib" path="/Users/bhargavkanmalla/Documents/selenium-java-3.141.59/apache-log4j-2.13.1-bin/log4j-core-2.13.1.jar"/>
+	<classpathentry kind="lib" path="/Users/bhargavkanmalla/Documents/selenium-java-3.141.59/libs/mysql-database-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/bhargavkanmalla/Documents/selenium-java-3.141.59/libs/mysql-connector-java-8.0.11.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -6,6 +6,7 @@
       <class name="FrGrp.LoginPage">
         <methods>
           <include name="loginPageAccess"/>
+          <include name="endSession"/>
         </methods>
       </class> <!-- FrGrp.LoginPage -->
     </classes>

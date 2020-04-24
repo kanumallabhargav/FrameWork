@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 
 public class AssertObjects
 {
-	WebDriver driver;
-	By contactObject = By.xpath("//*[@id='homepage']/header/div[2]/div/nav/ul/li[8]/a");
+	public WebDriver driver;
+	private By contactObject = By.xpath("//*[@id='homepage']/header/div[2]/div/nav/ul/li[8]/a");
 	public AssertObjects(WebDriver driver) 
 	{
 		this.driver=driver;

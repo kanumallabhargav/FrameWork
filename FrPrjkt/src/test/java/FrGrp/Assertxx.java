@@ -14,7 +14,7 @@ import resources.Base;
 public class Assertxx extends Base
 {
 	@Test
-	public void Assertion() throws IOException
+	public void Assertion() throws IOException, InterruptedException
 	{
 		driver=InitializeDriver();
 		AssertObjects ao = new AssertObjects(driver);
