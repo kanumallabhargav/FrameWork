@@ -9,13 +9,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-//import com.mysql.cj.xdevapi.Statement;
-
 public class DBConnect 
 {
-	//public String uid;
-	//public String pwd;
-
 	public static void main(String args[]) throws SQLException, IOException
 	{
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/Data.properties");

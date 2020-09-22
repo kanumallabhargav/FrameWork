@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12488" started-at="2020-04-24T16:07:03Z" finished-at="2020-04-24T16:07:15Z">
+  <suite name="Default suite" duration-ms="10714" started-at="2020-04-28T19:03:06Z" finished-at="2020-04-28T19:03:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12488" started-at="2020-04-24T16:07:03Z" finished-at="2020-04-24T16:07:15Z">
+    <test name="Default test" duration-ms="10714" started-at="2020-04-28T19:03:06Z" finished-at="2020-04-28T19:03:17Z">
       <class name="FrGrp.LoginPage">
-        <test-method status="FAIL" signature="loginPageAccess()[pri:0, instance:FrGrp.LoginPage@50eac852]" name="loginPageAccess" duration-ms="10327" started-at="2020-04-24T21:37:03Z" finished-at="2020-04-24T21:37:13Z">
+        <test-method status="FAIL" signature="loginPageAccess()[pri:0, instance:FrGrp.LoginPage@2f7298b]" name="loginPageAccess" duration-ms="8492" started-at="2020-04-29T00:33:06Z" finished-at="2020-04-29T00:33:15Z">
           <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
             <message>
               <![CDATA[Communications link failure
@@ -26,7 +26,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
 	at java.sql.DriverManager.getConnection(DriverManager.java:664)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at FrGrp.LoginPage.loginPageAccess(LoginPage.java:44)
+	at FrGrp.LoginPage.loginPageAccess(LoginPage.java:42)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,7 +83,7 @@ Caused by: java.net.UnknownHostException: null: nodename nor servname provided, 
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageAccess -->
-        <test-method status="PASS" signature="endSession()[pri:0, instance:FrGrp.LoginPage@50eac852]" name="endSession" is-config="true" duration-ms="2131" started-at="2020-04-24T21:37:13Z" finished-at="2020-04-24T21:37:15Z">
+        <test-method status="PASS" signature="endSession()[pri:0, instance:FrGrp.LoginPage@2f7298b]" name="endSession" is-config="true" duration-ms="2205" started-at="2020-04-29T00:33:15Z" finished-at="2020-04-29T00:33:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->

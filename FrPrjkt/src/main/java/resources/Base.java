@@ -80,5 +80,4 @@ public class Base
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"/Screenshots/"+scrnsht+"scrnsht.png"));
 	}
-	
 }

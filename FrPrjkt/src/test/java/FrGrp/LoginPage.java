@@ -28,7 +28,7 @@ public class LoginPage extends Base
 	@Test
 	public void loginPageAccess() throws IOException, InterruptedException, SQLException
 	{	
-		driver = InitializeDriver();
+		driver =  InitializeDriver();
 		log.info("Driver is initialized");	//LOG-----------------------------------------------------------------------------
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/Data.properties");
 		Properties prop = new Properties();
